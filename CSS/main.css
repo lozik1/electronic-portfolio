@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: rgb(255, 255, 255)
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Центрируем элементы */
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 15px; /* Добавляем отступы между пунктами меню */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: .3s;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #fff; /* Белая обводка */
+}
+
+nav ul li a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.active {
+    background-color: #fff;
+    color: #000;
+}
+
+.hidem {
+    display: none;
+}
+
+@media screen and (max-width: 768px) { 
+    .hidepc {
+        display: none;
+    }
+
+    .hidem {
+        display: block;
+    }
+}
+
+header {
+    background-color: #000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin: 0;
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 18px; /* Увеличенный размер шрифта */
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: .3s;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #fff; /* Белая обводка */
+}
+
+nav ul li a:hover {
+    background-color: #fff;
+    color: #000; /* При наведении текст становится черным */
+}
+
+.active {
+    background-color: #fff;
+    color: #000; /* Активный пункт меню становится черным */
+}
